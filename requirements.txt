@@ -1,0 +1,6 @@
+Flask==0.9
+Flask-Assets==0.7
+jsmin==2.0.2  # Compression used by webassets
+yuicompressor==2.4.7  # Compression used by webassets
+Flask-FlatPages==0.3
+Frozen-Flask==0.10

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class='row'>
+    <div id="faq">
+
+        <div class="span12 block-title">
+            <h1>{{ page.heading }}</h1> 
+            <hr />
+        </div>
+
+        <div id="accordionParent" class="accordion span12">
+            {% for faq in page.faqs %}
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a href="#collapse{{ loop.index }}" class="accordion-toggle" data-parent="#accordionParent" data-toggle="collapse">
+                            {{ faq.question }} 
+                        </a>
+                    </div>
+                    <div id="collapse{{ loop.index }}" class="accordion-body collapse{% if loop.first %} in{% endif %}">
+                        <div class="accordion-inner">
+                            {{ faq.answere }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock main %}

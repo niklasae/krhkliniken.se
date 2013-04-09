@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="row">
+        <div class="span12 block-title">
+            <h1>{{ page.heading }}</h1>
+            <hr />
+        </div>
+        <div class="plans">
+            {% for plan in page.plans %}
+            <div class='span3 price' >
+                <div class=" price-header modal-header">
+                    <h1>{{ plan.name }}</h1>
+                </div>
+                <div class="price-header modal-header">
+                    <h2>{{ plan.price }}</h2>
+                    <h6>{{ plan.price_sub }}</h6>
+                </div>
+                {% for content in plan.contains %}
+                    <div class="{{ 'modal-body' if loop.last else 'modal-header' }}">
+                        <h3>{{ content }}</h3>
+                    </div>
+                {% endfor %} 
+                <div class="modal-footer btn-center">
+                    <a href="{{ url_for(plan.link.route) }}" class="btn btn-danger btn-large">{{ plan.link.text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock main %}

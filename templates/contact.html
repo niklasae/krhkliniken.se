@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="row">
+    <div class="span12 block-title">
+        <h1>{{ page.header }}</h1>
+        <hr />
+    </div>
+    <div id="contact">
+
+        <div class="span4">
+            <address>
+                <p>
+                    <strong>Adress: </strong>{{ page.address }}<br>
+                    <strong>Mobil: </strong>{{ page.mobile }}<br>
+                    <strong>Email: </strong> 
+                    <a href="mailto:{{ page.email }}">{{ page.email }}</a><br>
+                </p>
+            </address>
+        </div>
+
+        <div class="span8">
+            {# Large map #}
+            <iframe width="570" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.se/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Henrik+Smithsgatan+7,+Malm%C3%B6&amp;aq=t&amp;sll=59.496005,18.294675&amp;sspn=2.267137,7.56958&amp;ie=UTF8&amp;hq=&amp;hnear=Henrik+Smithsgatan+7,+211+56+Malm%C3%B6,+Sk%C3%A5ne+l%C3%A4n&amp;t=m&amp;ll=55.601675,13.015881&amp;spn=0.016971,0.049009&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.se/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Henrik+Smithsgatan+7,+Malm%C3%B6&amp;aq=t&amp;sll=59.496005,18.294675&amp;sspn=2.267137,7.56958&amp;ie=UTF8&amp;hq=&amp;hnear=Henrik+Smithsgatan+7,+211+56+Malm%C3%B6,+Sk%C3%A5ne+l%C3%A4n&amp;t=m&amp;ll=55.601675,13.015881&amp;spn=0.016971,0.049009&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+            {#
+            <p>{{ page.form.header }}</p>
+
+            <form action="#" method="post" class="span6">
+                <fieldset>
+                    <div class="clearfix">
+                        <label for="name"><span>Namn:</span></label>
+                        <div class="input">
+                            <input type="text" value="" id="name" name="name" class="input-xxlarge" required placeholder="Namn">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label for="email"><span>Email:</span></label>
+                        <div class="input">
+                            <input type="text" value="" id="email" name="email" class="input-xxlarge" required placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label for="message"><span>Meddelande:</span></label>
+                        <div class="input">
+                            <textarea rows="7" name="body" id="message" class="input-xxlarge" tabindex="3" required placeholder="Meddelande"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="{{ page.form.button_text }}" class="btn btn-large" tabindex="3">
+                    </div>
+                </fieldset>
+            </form>
+            #}
+        </div>
+
+    </div>
+</div>
+{% endblock main %}

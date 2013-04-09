@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div id="about">
+        <div class="row">
+            <div class="span12 block-title">
+                <h1>{{ page.heading }}</h1>
+                <hr />
+            </div>
+            <div class="span8">
+                {% for text in page.texts %}
+                <p>
+                    {{ text }}
+                </p>
+                {% endfor %}
+            </div>
+
+            <div class="span4">
+                <img src="{{ page.img.src }}" alt="{{ page.img.alt }}" />
+            </div>
+        </div>
+    </div>
+{% endblock main %}
