@@ -1,0 +1,4 @@
+*.py*
+build
+static/.webassets-cache
+static/dynamic
