@@ -37,4 +37,3 @@ nosetests.xml
 # Build dir
 build
 static/.webassets*
-static/generated/*.*
