@@ -10,3 +10,12 @@ Site code for www.krhkliniken.semkvirtualenv krh
 
     pip install -r requirements.txt
     python run.py build
+
+    git checkout gh-pages
+    rsync -a -r -v --remoce-source-files build/ ./
+    rm -rf build
+
+    # Remove to be able to switch back...
+    rm static/dynamic/*
+
+    git checkout master
