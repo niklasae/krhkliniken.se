@@ -5,7 +5,7 @@ import sys
 
 # app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
 app.config['FREEZER_DESTINATION'] = 'build'
-app.config['FREEZER_DESTINATION_IGNORE'] = ['.git*']
+app.config['FREEZER_DESTINATION_IGNORE'] = ['.git*', 'static/dynamic']
 
 freezer = Freezer(app)
 
