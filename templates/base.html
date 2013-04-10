@@ -30,8 +30,14 @@
         <!-- bootstrap responsive css -->
         <link href="/static/css/resposive.css" rel="stylesheet" />
 
+        {# FIXME:Sort out the less stuff
         {% assets "all_less" %}
             <link rel="stylesheet/less" type="text/css" href="{{ ASSET_URL }}">
+        {% endassets %}
+        #}
+
+        {% assets "all_css" %}
+            <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
         {% endassets %}
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -74,8 +80,8 @@
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <h3>Håll dig uppdaterad!</h3>
-                        <p>Vill du ta del av våra senaste erbjudanden eller bara se vad vi håller på med, följ oss i våra sociala kanaler.</p>
+                        <h3>{{ base.footer.title }}</h3>
+                        <p>{{ base.footer.text }}</p>
                         <ul class="unstyled social">
                             <li>
                                 <a class="social-icon" href="javascript:;">

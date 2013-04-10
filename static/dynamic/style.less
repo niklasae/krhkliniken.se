@@ -55,6 +55,18 @@ h1, h2, h3 {
                 font-size: 20px;
                 font-style: normal;
                 font-weight: bold;
+                display: inline;
+            }
+
+            /* Hide sub-text for small screens */
+            @media (max-width: 400px) { 
+                :first-child {
+                    font-size: 15px;
+                }
+
+                > * {
+                    display: none;
+                }
             }
         }
     }
