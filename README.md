@@ -26,3 +26,6 @@ Site code for www.krhkliniken.semkvirtualenv krh
     rm static/dynamic/*
 
     git checkout master
+
+    ***Note while developing, it can be handy to use watch-lessc***
+    watch-lessc -i static/dynamic/style.less -o static/generated/style.less.32228.css
