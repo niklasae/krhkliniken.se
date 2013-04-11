@@ -19,8 +19,10 @@ Site code for www.krhkliniken.semkvirtualenv krh
     find build/static -name dynamic -type d -exec rm -rf {} \;
 
     git checkout gh-pages
-    rsync -a -r -v --remoce-source-files build/ ./
+    rsync -a -r -v --remove-source-files build/ ./
     rm -rf build
+    git gui
+    git push
 
     # Remove to be able to switch back...
     rm static/dynamic/*
