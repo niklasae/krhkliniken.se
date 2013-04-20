@@ -63,7 +63,13 @@ def index():
     return base_template_renderer('index.html', page=page)
 
 
-@app.route('/information/')
+@app.route('/om-oss/')
+def about():
+    page = pages.get_or_404('about')
+    return base_template_renderer('about.html', page=page)
+
+
+@app.route('/om-kiropraktik/')
 def info():
     page = pages.get_or_404('info')
     return base_template_renderer('info.html', page=page)
