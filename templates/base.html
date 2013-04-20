@@ -64,7 +64,9 @@
                     <div class="nav-collapse">
                         <ul class="nav pull-right">
                             {% for nav in base.navs %}
-                                <li {% if page.path == nav.route %}class="active"{% endif %}><a href="{{ url_for(nav.route) }}">{{ nav.name }}</a></li>
+                                {% if nav.enabled %}
+                                    <li {% if page.path == nav.route %}class="active"{% endif %}><a href="{{ url_for(nav.route) }}">{{ nav.name }}</a></li>
+                                {% endif %}
                             {% endfor %}
                         </ul>
                     </div><!--/.nav-collapse -->
