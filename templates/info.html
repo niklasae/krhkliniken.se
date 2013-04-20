@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block main %}
-    <div id="about">
+    <div id="info">
         {% for info in page.infos %}
             <div class="row">
                 <div class="span12 block-title">
@@ -14,11 +14,25 @@
                         {{ text }}
                     </p>
                     {% endfor %}
+
+
+                    {% if info.list %}
+                    <div class="list-with-heading">
+                        <h3>{{ info.list.title }}</h3>
+                        <ul>
+                            {% for list_item in info.list.list_items %}
+                            <li>{{ list_item }}</li>
+                            {% endfor %}
+                        </ul>   
+                    </div>
+                    {% endif %}
                 </div>
 
+                {% if info.img %}
                 <div class="span4">
                     <img src="{{ info.img.src }}" alt="{{ info.img.alt }}" />
                 </div>
+                {% endif %}
             </div>
         {% endfor %}
     </div>

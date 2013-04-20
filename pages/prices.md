@@ -2,46 +2,52 @@ last_edited: 2012-10-21
 title: KRH Kliniken - Kiropraktik, Rehab & Hälsa
 description: Kiropraktik, Rehab & Hälso Kliniken i Malmö
 # Content
-heading: Behandlinga
+heading: Priser
 # Plans - should be 3
 plans:
-    - name: Första 
-      price: 500 SEK
+    - name: Nybesök
+      price: 450 kr
       price_sub: .
       contains: 
-        - Konsultation
-        - Justering
-        - Rehab plan
+        - Allmän hälsoundersökning
+        - Behandling
+        - Ev. rehab plan
       link:
         route: book
         text: Boka nu
     - name: Återbesök 
-      price: 400 SEK
+      price: 450 kr
       price_sub: .
       contains: 
-        - Konsultation
-        - Justering
-        - Rehab plan
+        - Hälsouppföljning
+        - Behandling
+        - Ev. rehab plan 
       link:
         route: book
         text: Boka nu
-    - name: 10 Kort 
-      price: 3500 SEK
-      price_sub: 350 kr/gång
+    - name: Hembesök
+      price: 600 kr
+      price_sub: (inom Malmö)
       contains: 
-        - Konsultation
-        - Justering
-        - Rehab plan
+        - Hemkörning
+        - Behandling
+        - Ev. rehab plan
       link:
         route: book
         text: Boka nu       
-    - name: Akut behandling
-      price: 600 SEK + körning
-      price_sub: ring för exakt pris
+    - name: Rabatter  
+      price: -100 kr
+      price_sub: .
       contains: 
-        - Utkörning
-        - Justering
-        - Rehab plan
+        - Pensionärer
+        - Studenter
+        - .
       link:
         route: book
-        text: Boka nu       
+        text: Boka nu
+plan_info:
+    title: Övrig information
+    texts:
+        - Avsätt cirka 50 minuter för ditt första besök på kliniken och cirka 30 minuter för ett återbesök.
+        - Hembesök är möjligt för dig som behöver bli undersökt eller behandlad i ditt eget hem ifall du har akuta besvär som gör att du inte kan besöka kliniken. Detta gäller även under helger. Om du bor utan för Malmö kan priset stiga beroende på bland annat restid och avstånd. 
+        - För tillfället tar vi endast emot kontanter. Inom en snar framtid kan du även betala med kort.
