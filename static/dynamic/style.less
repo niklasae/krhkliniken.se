@@ -8,9 +8,9 @@
 
 @color-navbar-bg: #f5f5f5;
 @color-navbar-bg-active: #e7e7e7;
-@color-navbar-border: #dddddd;
-@color-navbar-text: #aaaaaa;
-@color-navbar-text-active: #333333;
+@color-navbar-border: #ddd;
+@color-navbar-text: #aaa;
+@color-navbar-text-active: #333;
 
 @height-logo: 80px;
 
@@ -37,8 +37,6 @@ h1, h2, h3 {
     background-image: none;
     border-radius: 0;
     padding-bottom: 0;
-    box-shadow: none;
-    border-bottom: 1px solid @color-navbar-border;
 
     .container {
         width: auto;
@@ -173,6 +171,8 @@ ul.social img {
 
 @media  (min-width: 979px)  { 
     .navbar-inner {
+        box-shadow: none;
+        border-bottom: 1px solid @color-navbar-border;
         padding-right: 0;
 
         .nav.pull-right {
@@ -180,9 +180,9 @@ ul.social img {
         }
 
         .nav > li > a {
-            line-height: @height-logo + 20px;
-            border-right: 1px solid @color-navbar-border;
-            padding: 0;
+            line-height: @height-logo;
+            border-left: 1px solid @color-navbar-border;
+            /* padding: 0; */
             width: 92px;
             text-align: center;
         }
@@ -244,7 +244,12 @@ ul.social img {
 }
 
 .thumbnail, .accordion-group {
-    background-color: #ffffff;
+    background-color: #fff;
+}
+
+.list-with-heading h3 {
+    font-weight: normal;
+    font-size: 14px;
 }
 
 
@@ -255,7 +260,7 @@ ul.social img {
 
 }
 .price{
-    background-color:#ffffff;
+    background-color:#fff;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;border-radius:6px;
     -webkit-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);
@@ -271,7 +276,7 @@ ul.social img {
 }
 .price-header{
     background: #686868;
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -280,7 +285,7 @@ ul.social img {
     margin-top: 20px;
 }
 .price .label-info{
-    color:#FFFFFF;
+    color:#fff;
 }
 
 /* Make buttons plain */
