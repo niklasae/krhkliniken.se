@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 
 {% block main %}
-<div id="about">
+<div id="book">
     <div class="row">
+
         <div class="span12 block-title">
-            <h1>{{ page.header }}</h1>
+            <h1>{{ page.online.title }}</h1>
             <hr />
+            <p>{{ page.online.text }}</p>
+            <a href="{{ page.online.link.url }}" target="_blank" class="btn btn-large btn-info">{{ page.online.link.text }}</a>
         </div>
-        <div class="span12">
-            <a href="" class="btn btn-large btn-info">{{ page.button_text }}</a>
+
+        <div class="span12 block-title">
+            <h1>{{ page.clinic.title }}</h1>
+            <hr />
+            <p>{{ page.clinic.text|safe }}</p>
         </div>
     </div>
 </div>
