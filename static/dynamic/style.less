@@ -10,6 +10,7 @@
 @color-navbar-bg-active: #e7e7e7;
 @color-navbar-border: #ddd;
 @color-navbar-text: #aaa;
+@color-navbar-text-hover: #f5f5f5;
 @color-navbar-text-active: #333;
 
 @height-logo: 80px;
@@ -125,6 +126,7 @@ h1, h2, h3 {
         background-color: @color-navbar-bg-active;
 
         &:hover {
+            color: @color-navbar-text-hover;
             background-color: darken(@color-navbar-bg-active, 10%);
         }
     }
@@ -135,6 +137,7 @@ h1, h2, h3 {
         font-weight: bold;
 
         &:hover {
+            color: @color-navbar-text-hover;
             background-color: darken(@color-navbar-bg-active, 10%);
         }
     }
@@ -195,6 +198,12 @@ h1, h2, h3 {
             /* padding: 0; */
             width: 92px;
             text-align: center;
+
+            /* Nice transitions for the full screen nav hover */
+            -webkit-transition:background-color 0.5s ease-in;  
+            -moz-transition:background-color 0.5s ease-in;  
+            -o-transition:background-color 0.5s ease-in;  
+            transition:background-color 0.5s ease-in;             
         }
     }
 }
