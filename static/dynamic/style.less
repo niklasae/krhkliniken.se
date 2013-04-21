@@ -148,17 +148,27 @@ h1, h2, h3 {
     margin-top: 30px;
     padding: 20px 0; 
     background-color: @color-logo-blue;
-    color: #ffffff;
-}
+    color: #fff;
 
-ul.social li {
-    float: left;
-    width: 50px;
-}
+    ul.social {
+        list-style: none;
+        font-size: 14px;
 
-ul.social img {
-    margin: 5px;
-    width: 50px;
+        li a {
+            float: right;
+            background-image: url(/static/img/facebook.png);
+            background-position: -3px 2px;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 12px 0 12px 30px;
+
+            &:hover {
+                background-image: url(/static/img/facebook_active.png);
+                color: #3b5399;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .copy {
