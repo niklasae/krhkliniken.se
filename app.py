@@ -105,6 +105,13 @@ def book():
     return base_template_renderer('book.html', page=page)
 
 
+@app.route('/erbjudande/')
+@app.route('/oppnings-erbjudande/')
+def offer():
+    page = pages.get_or_404('offer')
+    return base_template_renderer('offer.html', page=page)
+
+
 @app.route('/style.css')
 def compressed_css():
     return '/* ... */', 200, {'Content-Type': 'text/css; charset=utf-8'}
