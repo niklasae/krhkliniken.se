@@ -9,17 +9,21 @@
     <div id="contact">
 
         <div class="span4">
+            <h2>{{ page.contact_details.title }}</h2>
             <address>
                 <p>
-                    <strong>Adress: </strong>{{ page.address }}<br>
-                    <strong>Telefon: </strong>{{ page.telefon }}<br>
-                    <strong>Mobil: </strong>{{ page.mobile }}<br>
+                    <strong>Adress: </strong>{{ page.contact_details.address }}<br>
+                    <strong>Telefon: </strong>{{ page.contact_details.telefon }}<br>
+                    <strong>Mobil: </strong>{{ page.contact_details.mobile }}<br>
                     <strong>Email: </strong> 
-                    <a href="mailto:{{ page.email }}">{{ page.email }}</a><br>
+                    <a href="mailto:{{ page.contact_details.email }}">{{ page.contact_details.email }}</a><br>
                 </p>
             </address>
+            <h2>{{ page.business_hours.title }}</h2>
             <p>
-                <strong>{{ day }}: </strong>{{ time }}<br>
+                {% for dt in page.business_hours.day_times %}
+                <strong>{{ dt.day }}: </strong>{{ dt.time }}<br>
+                {% endfor%}
             </p>
         </div>
 
