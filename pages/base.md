@@ -27,5 +27,5 @@ footer:
     title: Håll dig uppdaterad!
     text: Vill du ta del av våra senaste erbjudanden eller bara se vad vi håller på med, följ oss i våra sociala kanaler.
     email: info@krhkliniken.se
-    address: KRH Kliniken, Henrik smith gatan 7, 211 56 Malmö
+    address: KRH Kliniken, Henrik Smithgatan 7, 211 56 Malmö
 facebook: krhkliniken

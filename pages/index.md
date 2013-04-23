@@ -47,8 +47,8 @@ thumbnails:
       img:
         src: /static/img/shoulderpain.jpg
         alt: akut smärta och kiropraktisk behandling
-    - header: Det senaste innom behandlingar
-      text: Vi erbjuder det senaste innom kiropraktiska behandlingar. Våra kiropraktorer håller sig ständigt uppdaterade för att kunna ge dig den bästa servicen. Har du några frågor är du välkommen att höra av dig. 
+    - header: Det senaste inom behandlingar
+      text: Vi erbjuder det senaste inom kiropraktisk behandling. Våran kiropraktor håller sig ständigt uppdaterade för att kunna ge dig den bästa servicen. Har du några frågor är du välkommen att höra av dig. 
       btn: 
         text: Se prislistan >>
         route: prices
