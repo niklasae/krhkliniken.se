@@ -105,11 +105,15 @@ def book():
     return base_template_renderer('book.html', page=page)
 
 
-@app.route('/erbjudande/')
 @app.route('/oppnings-erbjudande/')
 def offer():
     page = pages.get_or_404('offer')
     return base_template_renderer('offer.html', page=page)
+
+
+@app.route('/googlef9f345aa60d2cc33.html')
+def google_domain():
+    return base_template_renderer('googlef9f345aa60d2cc33.html', {})
 
 
 @app.route('/style.css')
