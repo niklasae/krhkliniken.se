@@ -8,12 +8,12 @@
         </div>
         <div class="plans">
             {% for plan in page.plans %}
-            <div class='span3 price' >
+            <div class='span4 price' >
                 <div class=" price-header modal-header">
                     <h1>{{ plan.name }}</h1>
                 </div>
                 <div class="price-header modal-header">
-                    <h2>{{ plan.price }}</h2>
+                    <h2>{{ plan.price }} <del>{{ plan.price_old }}</del></h2>
                     <h6>{{ plan.price_sub }}</h6>
                 </div>
                 {% for content in plan.contains %}
