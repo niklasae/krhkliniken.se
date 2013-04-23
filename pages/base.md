@@ -6,7 +6,7 @@ navs:
       name: Om oss
       enabled: True
     - route: info
-      name: Om kiropraktik 
+      name: Kiropraktik 
       enabled: True
     - route: prices
       name: Priser 

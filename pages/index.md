@@ -5,8 +5,8 @@ description: Kiropraktik, Rehab & Hälso Kliniken i Malmö
 # Carousel
 #
 carousels:
-    - heading: Öppningserbjudande - 350 kr / behandling
-      text: Vi firar att vi äntilgen öppnat vår mottagning i centrala Malmö. Läs mer här >>
+    - heading: Öppningserbjudande
+      text: Boka nu och SPARA 150kr. Nu endast 300kr för nybesök! Läs mer om vårt öppningserbjudande >>
       route: offer
       img: 
         src: /static/img/opening-offer.jpg
@@ -45,21 +45,21 @@ thumbnails:
         text: Kontakta oss >>
         route: contact
       img:
-        src: http://dummyimage.com/360x240/5aaac7/fff
-        alt: descr 
+        src: /static/img/shoulderpain.jpg
+        alt: akut smärta och kiropraktisk behandling
     - header: Det senaste innom behandlingar
       text: Vi erbjuder det senaste innom kiropraktiska behandlingar. Våra kiropraktorer håller sig ständigt uppdaterade för att kunna ge dig den bästa servicen. Har du några frågor är du välkommen att höra av dig. 
       btn: 
-        text: Kontakta oss >>
-        route: contact
+        text: Se prislistan >>
+        route: prices
       img:
-        src: http://dummyimage.com/360x240/5aaac7/fff
-        alt: descr 
+        src: /static/img/sports-massage.jpg 
+        alt: kiropraktisk behandling
     - header: Företags erbjudanden
       text: Vi har väldigt bra erbjudanden för företagskunder och kan erbjuda det mesta inom friskvård. Vi kan komma ut till ert kontor eller behandla er i våra lokaler, ni väljer det som passar er bäst. Kontakta oss för mer information.
       btn: 
         text: Kontakta oss >>
         route: contact
       img:
-        src: http://dummyimage.com/360x240/5aaac7/fff
-        alt: descr 
+        src: /static/img/ergonomics.jpg
+        alt: ergonomi och hälsa på jobbet
