@@ -6,7 +6,7 @@ description: Kiropraktik, Rehab & Hälso Kliniken i Malmö
 #
 carousels:
     - heading: Öppningserbjudande - 350 kr / behandling
-      text: Vi firar att vi äntilgen öppnat vår motagning i centrala Malmö. Läs mer här >>
+      text: Vi firar att vi äntilgen öppnat vår mottagning i centrala Malmö. Läs mer här >>
       route: offer
       img: 
         src: /static/img/opening-offer.jpg
