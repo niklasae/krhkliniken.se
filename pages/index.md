@@ -40,7 +40,7 @@ intro:
 #
 thumbnails:
     - header: Akut kiropraktik
-      text: Ibland kommer smärtan och skadan vid det mest olämpliga tiden och akut hjälp behövs, det är då skönt att veta att KRH Kliniken alltid finns tillgänglig och erbjuder akut hjälp med hembesök.
+      text: Ibland kommer smärtan och skadan vid den mest olämpliga tiden och akut hjälp behövs, det är då skönt att veta att KRH Kliniken alltid finns tillgänglig och erbjuder akut hjälp med hembesök.
       btn: 
         text: Kontakta oss >>
         route: contact
@@ -48,14 +48,14 @@ thumbnails:
         src: /static/img/shoulderpain.jpg
         alt: akut smärta och kiropraktisk behandling
     - header: Det senaste inom behandlingar
-      text: Vi erbjuder det senaste inom kiropraktisk behandling. Våran kiropraktor håller sig ständigt uppdaterade för att kunna ge dig den bästa servicen. Har du några frågor är du välkommen att höra av dig. 
+      text: Vi erbjuder det senaste inom kiropraktisk behandling. KRH Kliniken håller sig ständigt uppdaterad för att kunna ge dig den bästa servicen. Har du några frågor är du välkommen att höra av dig. 
       btn: 
         text: Se prislistan >>
         route: prices
       img:
         src: /static/img/sports-massage.jpg 
         alt: kiropraktisk behandling
-    - header: Företags erbjudanden
+    - header: Företagserbjudanden
       text: Vi har väldigt bra erbjudanden för företagskunder och kan erbjuda det mesta inom friskvård. Vi kan komma ut till ert kontor eller behandla er i våra lokaler, ni väljer det som passar er bäst. Kontakta oss för mer information.
       btn: 
         text: Kontakta oss >>

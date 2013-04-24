@@ -36,16 +36,17 @@ plans:
       link:
         route: book
         text: Boka nu       
-#    - name: Rabatter  
-#      price: -100 kr
-#      price_sub: .
-#      contains: 
-#        - Pensionärer
-#        - Studenter
-#        - .
-#      link:
-#        route: book
-#        text: Boka nu
+    - name: Reducerat pris
+      price: 300 kr
+      price_old: 350 kr
+      price_sub: .
+      contains: 
+        - Pensionärer
+        - Studenter
+        - .
+      link:
+        route: book
+        text: Boka nu
 plan_info:
     title: Övrig information
     texts:

@@ -8,11 +8,10 @@ contact_details:
     email: info@krhkliniken.se
     address: Henrik Smithgatan 7, 211 56 Malmö
     telefon: 040-844 05
-    mobile: +46 (0)70 123 456 78
 business_hours:
-    title: Öppet tider
+    title: Öppettider
     day_times:
         - day: Måndag - Fredag
-          time: 08.00 - 17.00
+          time: 08.00 - 18.00
         - day: Lördag - Söndag
           time: Enligt överenskommelse

@@ -14,7 +14,7 @@ infos:
         alt: the waiting room
     - heading: Om Kiropraktorn
       texts: 
-        - Mohammed Azzam tog sin examen från Skandinaviska Kiropraktor högskolan i Stockholm 2012, samma år fick han även sin legitimation från socialstyrelsen. 
+        - Mohammed Azzam tog sin examen från Skandinaviska Kiropraktorhögskolan i Stockholm år 2012. Samma år fick han även sin legitimation från Socialstyrelsen. 
         - Han är uppvuxen i Malmö och att återvända för att starta KRH Kliniken var en självklarhet. 
         - Hans gedigna intresse för kroppen och dess funktioner har länge varit hans huvudintresse och att kunna behandla kroppen med händerna är något han brinner för.
         - Idrott och sport är något han själv har utövat under hela sitt liv, speciellt fotboll, vilket han än idag är aktiv inom.
