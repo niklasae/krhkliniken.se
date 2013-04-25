@@ -2,7 +2,7 @@ og:
     type: website
     url: http://www.krhkliniken.se
     site_name: KRH Kliniken - Kiropraktik, Hälsa & Rehab
-    title: KRH Kliniken - Kiropraktik, Hälsa & Rehab
+    title: Välkommen till KRH Kliniken
     description: Belägen i centrala Malmö, i nya fräsha lokaler ligger denna trevliga lilla klinik. Vi är experter inom kiropraktik och rehabilitering och vänder oss till både privatpersoner och företagshälsovård. 
     img: http://www.krhkliniken.se/static/img/logo-square-horizontal.png
 navs:

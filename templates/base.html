@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head prefix="og: http://ogp.me/ns#">
         <meta charset="utf-8">
 
         <title>{{ page.title }}</title>
@@ -10,12 +10,12 @@
         <meta name="author" content="Niklas A Emanuelsson | niklas@krhkliniken.se">
 
         <!-- OG tags -->
-        <meta property="og:type" content="{{ base.type }}" />
-        <meta property="og:url" content="{{ base.url }}" />
-        <!-- <meta property="og:site_name" content="{{ base.site_name }}" /> -->
-        <meta property="og:title" content="{{ base.title }}" />
-        <meta property="og:description" content="{{ base.description }}" />
-        <meta property="og:img" content="{{ base.img }}" />
+        <meta property="og:type" content="{{ base.og.type }}" />
+        <meta property="og:url" content="{{ base.og.url }}" />
+        <meta property="og:site_name" content="{{ base.og.site_name }}" />
+        <meta property="og:title" content="{{ base.og.title }}" />
+        <meta property="og:description" content="{{ base.og.description }}" />
+        <meta property="og:img" content="{{ base.og.img }}" />
 
         <link rel="icon" type="img/png" href="/static/img/favicon.png" />
 
