@@ -34,7 +34,7 @@ carousels:
 #
 intro:
     heading: KRH Kliniken - Kiropraktik, Rehab & Hälsa
-    text: Belägen i centrala Malmö, i nya fräsha lokaler ligger denna trevliga lilla klinik. Vi är experter i kiropraktik och vänder oss till både privatpersoner och företagshälsovård. 
+    text: Belägen i centrala Malmö, i nya fräsha lokaler ligger denna trevliga lilla klinik. Vi är experter inom kiropraktik och rehabilitering och vänder oss till både privatpersoner och företagshälsovård. 
 #
 # Thumbnails - Should be 3
 #
