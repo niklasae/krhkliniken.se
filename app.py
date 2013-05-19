@@ -40,7 +40,7 @@ assets.register('all_js', 'js/libs/bootstrap.min.js', js)
 css = Bundle(
     'generated/style.less.css',
     filters='cssmin',
-    output='gen/style.less.min.css'
+    output='generated/style.less.min.css'
 )
 assets.register('all_css', css)
 
