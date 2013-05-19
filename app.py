@@ -18,33 +18,30 @@ pages = FlatPages(app)
 
 
 # ~~~ ASSETS ~~~
-app.config['ASSETS_DEBUG'] = True
+app.config['ASSETS_DEBUG'] = False
 app.config['COFFEE_NO_BARE'] = True  # webassets doc says the opposite...
 assets = Environment(app)
 
 # COFFEESCRIPT & JAVASCRIPT
 js = Bundle(
     # coffeescripts
-    Bundle('dynamic/*.coffee', filters='coffeescript', output='generated/krh.coffee.%(version)s.js', debug=False),
+    Bundle(
+        'dynamic/*.coffee',
+        filters='coffeescript',
+        output='generated/script.coffee.js',
+        debug=False
+    ),
     filters=('jsmin', 'jspacker'),
-    output='generated/krh.coffee.%(version)s.min.js')
+    output='generated/script.coffee.min.js')
 # Add minified js to register below
-assets.register('all_js', js, 'js/libs/bootstrap.min.js', 'js/libs/less-1.3.3.min.js')
+assets.register('all_js', 'js/libs/bootstrap.min.js', js)
 
-# FIXME: Sort out the less stuff, so it's nicer
-# LESS
-# https://github.com/miracle2k/webassets/pull/131
-# Due to a bug in webassets, we wil run into problems with less files not being updated properly.
-# TODO:
-#   1. Upgrade to latest webassets/Flask-Assets (0.8?)
-#   2. Remove js/less-X.X.X.min.js
-#   2. Add to CSS section below
-#   3. Test a update
-# Until then, we'll have to use less.js and debug=True
-# less = Bundle('dynamic/*.less', filters='less', output='gen/krh.less.%(version)s.css', debug=True)
-# assets.register('all_less', less)
-
-css = Bundle('generated/*.css')
+# LESS & CSS
+css = Bundle(
+    'generated/style.less.css',
+    filters='cssmin',
+    output='gen/style.less.min.css'
+)
 assets.register('all_css', css)
 
 

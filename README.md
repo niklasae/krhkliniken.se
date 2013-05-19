@@ -7,8 +7,8 @@ Site code for www.krhkliniken.semkvirtualenv krh
 
     # Generate files (LESS to CSS)
     rm static/generated/*
-    #coffee -c -p static/dynamic/script.coffee > static/generated/script.coffee.$RANDOM.js
-    lessc -x static/dynamic/style.less > static/generated/style.less.$RANDOM.css
+    #coffee -c -p static/dynamic/script.coffee > static/generated/script.coffee.js
+    lessc -x static/dynamic/style.less > static/generated/style.less.css
 
     # Run Frozen Flask
     pip install -r requirements.txt
