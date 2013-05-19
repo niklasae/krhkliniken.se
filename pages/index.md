@@ -6,7 +6,7 @@ description: Kiropraktik, Rehab & Hälso Kliniken i Malmö
 #
 carousels:
     - heading: Öppningserbjudande
-      text: Boka nu och SPARA 150kr. Nu endast 300kr för nybesök! Läs mer om vårt öppningserbjudande >>
+      text: Boka nu och SPARA 160kr. Nu endast 290kr för nybesök! Läs mer om vårt öppningserbjudande >>
       route: offer
       img: 
         src: /static/img/opening-offer.jpg
