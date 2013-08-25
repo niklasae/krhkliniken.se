@@ -18,11 +18,11 @@ Site code for www.krhkliniken.semkvirtualenv krh
     find ./build -name .git\* -type f -delete
     find build/static -name dynamic -type d -exec rm -rf {} \;
 
-    git checkout gh-pages
-    rsync -a -r -v --remove-source-files build/ ./
-    rm -rf build
-    git gui
-    git push
+    # Make sure to have gh-pages branch checked out under ../krhkliniken.se_ghp
+    # mkdir ../krhkliniken.se_ghp && cd ../krhkliniken.se_ghp/
+    # git fetch && git checkout -b gh-pages origin/gh-pages
+    rsync -a -r -v --remove-source-files build/ ../krhkliniken.se_ghp && rm -rf build
+    cd ../krhkliniken.se-ghp && git gui && git push
 
     # Remove to be able to switch back...
     rm static/dynamic/*
