@@ -11,7 +11,9 @@ contact_details:
 business_hours:
     title: Öppettider
     day_times:
-        - day: Måndag - Fredag
-          time: 08.00 - 18.00
-        - day: Lördag - Söndag
-          time: Enligt överenskommelse
+        - day: Ring oss för aktuella öppettider.
+          time: 
+#        - day: Måndag - Fredag
+#          time: 08.00 - 18.00
+#        - day: Lördag - Söndag
+#          time: Enligt överenskommelse

@@ -5,12 +5,18 @@ description: Kiropraktik, Rehab & Hälso Kliniken i Malmö
 # Carousel
 #
 carousels:
-    - heading: Öppningserbjudande
-      text: Boka nu och SPARA 160kr. Nu endast 290kr för nybesök! Läs mer om vårt öppningserbjudande >>
-      route: offer
+    - heading: KRH Kliniken - Kiropraktik, Rehab & Hälsa
+      text: Besök oss i våra fina lokaler i centrala Malmö >>
+      route: contact
       img: 
-        src: /static/img/opening-offer.jpg
+        src: /static/img/street-view.jpg
         alt: descr
+#    - heading: Öppningserbjudande
+#      text: Boka nu och SPARA 160kr. Nu endast 290kr för nybesök! Läs mer om vårt öppningserbjudande >>
+#      route: offer
+#      img: 
+#        src: /static/img/opening-offer.jpg
+#        alt: descr
 #    - heading: En bra blandning av olika behandlingar
 #      text: Vi kör med en variation av behandlingar med fokus på kiropraktik. Alla behandlingar är dock special utformade efter dina behov.
 #      route: route
