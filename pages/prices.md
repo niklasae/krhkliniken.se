@@ -6,8 +6,7 @@ heading: Priser
 # Plans - should be 3
 plans:
     - name: Nybesök
-      price: 290 kr 
-      price_old: 450 kr
+      price: 450 kr
       price_sub: .
       contains: 
         - Allmän hälsoundersökning
@@ -35,10 +34,9 @@ plans:
         - Ev. rehab plan
       link:
         route: book
-        text: Boka nu       
+        text: Boka nu
     - name: Reducerat pris
-      price: 290 kr
-      price_old: 350 kr
+      price: 350 kr
       price_sub: .
       contains: 
         - Pensionärer
