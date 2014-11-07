@@ -1,7 +1,7 @@
 krhkliniken.se
 ==============
 
-Site code for www.krhkliniken.semkvirtualenv krh
+Site code for www.krhkliniken.se
 
     Should be scripted...
 
@@ -11,6 +11,7 @@ Site code for www.krhkliniken.semkvirtualenv krh
     lessc -x static/dynamic/style.less > static/generated/style.less.css
 
     # Run Frozen Flask
+    mkvirtualenv krh
     pip install -r requirements.txt
     python run.py build
 
